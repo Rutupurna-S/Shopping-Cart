@@ -30,15 +30,9 @@ Open: http://localhost:5173
 Project Structure:
 src/
 ├── components/
-
 ├── context/
-
 ├── pages/
-
 ├── data/
-
 ├── types/
-
 ├── App.tsx
-
 └── main.tsx
