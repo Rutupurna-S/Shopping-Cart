@@ -21,18 +21,31 @@ Tech Stack:
 -Vite
 
 How to Run:
+
 git clone https://github.com/Rutupurna-S/Shopping-Cart.git
+
 cd Shopping-Cart
+
 npm install
+
 npm run dev
+
 Open: http://localhost:5173
 
 Project Structure:
+
 src/
+
 ├── components/
+
 ├── context/
+
 ├── pages/
+
 ├── data/
+
 ├── types/
+
 ├── App.tsx
+
 └── main.tsx
