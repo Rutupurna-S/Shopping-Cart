@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+Shopping Cart Application (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive e-commerce shopping cart application built using ReactJS, and Tailwind CSS.
+Users can browse products, add/remove items from the cart, manage quantities, maintain a wishlist, and proceed to checkout.
+Features
 
-Currently, two official plugins are available:
+Product listing with categories:
+-Add / remove items from cart
+-Quantity update (+ / −)
+-Dynamic total price calculation
+-Wishlist functionality
+-Persistent cart & wishlist (localStorage)
+-Responsive UI with fixed navbar
+-Mock checkout flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack:
+-ReactJS (TypeScript)
+-Context API
+-Tailwind CSS
+-React Router DOM
+-Vite
 
-## Expanding the ESLint configuration
+How to Run:
+git clone https://github.com/Rutupurna-S/Shopping-Cart.git
+cd Shopping-Cart
+npm install
+npm run dev
+Open: http://localhost:5173
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Project Structure:
+src/
+├── components/
+├── context/
+├── pages/
+├── data/
+├── types/
+├── App.tsx
+└── main.tsx
