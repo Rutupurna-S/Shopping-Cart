@@ -12,6 +12,9 @@ export default function ProductCard({ product }: Props) {
   const quantity = cartItem?.quantity ?? 0;
   const { toggleWishlist, isWishlisted } = useWishlist();
   const liked = isWishlisted(product.id);
+  const addToCartAlert = () => {
+    alert(`The product is added to cart`);
+  };
 
   return (
     <div className="bg-white rounded-4xl p-5 shadow-sm hover:shadow-md transition-shadow relative border border-gray-50">
@@ -52,7 +55,7 @@ export default function ProductCard({ product }: Props) {
       <div className="mt-4">
         {quantity === 0 ? (
           <button
-            onClick={() => addToCart(product)}
+            onClick={addToCartAlert}
             className="w-full bg-[#00BFA5] text-white py-3 rounded-xl font-medium hover:brightness-95 transition-all shadow-sm"
           >
             Add to Cart
