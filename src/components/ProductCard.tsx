@@ -52,7 +52,10 @@ export default function ProductCard({ product }: Props) {
       <div className="mt-4">
         {quantity === 0 ? (
           <button
-            onClick={() => addToCart(product)}
+            onClick={() => {
+              addToCart(product);
+              alert(`${product.name} has been added to your cart.`);
+            }}
             className="w-full bg-[#00BFA5] text-white py-3 rounded-xl font-medium hover:brightness-95 transition-all shadow-sm"
           >
             Add to Cart
